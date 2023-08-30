@@ -1,0 +1,276 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3-Column-preview-card</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,800&family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: hsl(0, 0%, 95%);
+      width: 100%;
+    }
+    h1 {
+      font-family: "Big Shoulders Display", cursive;
+      font-size: clamp (2rem, 4vw + 6px);
+      color: hsla(0, 0%, 100%, 0.75);
+    }
+    button {
+      background-color: hsl(0, 0%, 95%);
+
+      width: fit-content;
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 15px;
+      border: none;
+      border-radius: 25px;
+      padding: 12px 30px 12px 30px;
+      
+    }
+    p {
+      font-family: "Lexend Deca", sans-serif;
+      font-size: 15px;
+      color: hsla(0, 0%, 100%, 0.75);
+      line-height: 25px;
+      
+
+      
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+     
+    }
+    .First_button {
+      color: hsl(31, 77%, 52%);
+    }
+    .Second_button {
+      color: hsl(184, 100%, 22%);
+    }
+    .Third_button {
+      color: hsl(179, 100%, 13%);
+    }
+    
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .Column_Container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 337px;
+      margin: auto;
+      margin-top: 40px;
+     
+      
+      
+    }
+    .First_column {
+      display: flex;
+      flex-direction: column;
+     gap: 10px;
+        width: 70%;
+      background-color: hsl(31, 77%, 52%);
+      border-radius: 10px 10px 0 0px;
+      padding: 40px 40px 20px 40px;
+      
+     
+    }
+    .Second_Column {
+        display: flex;
+      flex-direction: column;
+     gap: 10px;
+     width: 70%;
+border: 1px solid gray;
+      background-color: hsl(184, 100%, 22%);
+      padding: 40px 40px 20px 40px;
+    }
+    .Third_Column {
+        display: flex;
+      flex-direction: column;
+     gap: 10px;
+     width: 70%;
+      background-color: hsl(179, 100%, 13%);
+      border-radius: 0 0 10px 10px;
+      padding: 40px 40px 20px 40px;
+    }
+   .Column_button{
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .Column_Container {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+   
+      max-width: 1440px;
+      margin: auto;
+    }
+    .First_column {
+      display: flex;
+      flex-direction: column;
+     gap: 10px;
+        width: 15%;
+      background-color: hsl(31, 77%, 52%);
+      border-radius: 10px 0 0 10px;
+      padding: 40px 40px 20px 40px;
+     
+    }
+    .Second_Column {
+        display: flex;
+      flex-direction: column;
+     gap: 10px;
+        width: 15%;
+border: 1px solid gray;
+      background-color: hsl(184, 100%, 22%);
+      padding: 40px 40px 20px 40px;
+    }
+    .Third_Column {
+        display: flex;
+      flex-direction: column;
+     gap: 10px;
+     width: 15%;
+      background-color: hsl(179, 100%, 13%);
+      border-radius: 0 10px 10px 0;
+      padding: 40px 40px 20px 40px;
+    }
+
+    
+    .Column_button{
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+.Column_button{
+    margin-top: 100px;
+    margin-bottom: 40px;
+
+}
+.Column_button{
+    margin-top: 100px;
+    margin-bottom: 40px;
+
+}
+}
+  </style>
+  
+  <body>
+    <div class="container">
+    <!-- columns -->
+    <div class="Column_Container">
+      <!-- First Column  -->
+      <div class="First_column">
+        <div class="First_Column_Icon">
+          <img src="assets/images/icon-sedans.svg" alt="icon-sedans" />
+        </div>
+        <div class="First_column_Title">
+          <h1>SEDANS</h1>
+        </div>
+        <div class="First_column_Description">
+          <p>
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or on your next road trip
+          </p>
+        </div>
+        <div class="Column_button">
+          <button onclick="First_button()" id="FirstButton" class="First_button">Learn More</button>
+        </div>
+      </div>
+      <!-- second Column  -->
+      <div class="Second_Column">
+        <div class="Second_column_Icon">
+          <img src="assets/images/icon-suvs.svg" alt="icon-suvs" />
+        </div>
+        <div class="Second_column_Title">
+          <h1>SUVS</h1>
+        </div>
+        <div class="Second_column_Description">
+          <p>
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+        </div>
+        <div class="Column_button">
+          <button onclick="Second_button()" id="SecondButton" class="Second_button">Learn More</button>
+        </div>
+      </div>
+      <!-- third Column  -->
+      <div class="Third_Column">
+        <div class="Third_column_Icon">
+          <img src="assets/images/icon-luxury.svg" alt="icon-luxury" />
+        </div>
+        <div class="First_column_Title">
+          <h1>LUXURY</h1>
+        </div>
+        <div class="thrid_column_Description">
+          <p>
+            Cruise in the best car brands without the bloated priced. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+        </div>
+        <div class="Column_button">
+          <button  onclick="Third_button()" id="ThirdButton">Learn More</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <script>
+        // Get a reference to the button
+        function Third_button(){
+            var Thirdbutton = document.getElementById('ThirdButton');
+            Thirdbutton.style.backgroundColor = 'transparent';
+    
+    // Change the text color
+    Thirdbutton.style.color = 'white';
+    Thirdbutton.style.border = '2px solid white';
+        }
+    function First_button(){
+            var FirstButton = document.getElementById('FirstButton');
+            FirstButton.style.backgroundColor = 'transparent';
+    
+    // Change the text color
+    FirstButton.style.color = 'white';
+    FirstButton.style.border = '2px solid white';
+        }
+    function Second_button(){
+            var SecondButton = document.getElementById('SecondButton');
+            SecondButton.style.backgroundColor = 'transparent';
+    
+    // Change the text color
+    SecondButton.style.color = 'white';
+    SecondButton.style.border = '2px solid white';
+        }
+    
+    
+      </script>
+  </body>
+  
+</html>
